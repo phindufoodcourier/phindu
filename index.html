@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phindu Food Courier • Mzuzu</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="hero">
+            <h1><i class="fas fa-motorcycle"></i> Phindu Food Courier <i class="fas fa-utensils"></i></h1>
+            <div class="sub">Mzuzu's favourite · delivered fast</div>
+            <div class="location"><i class="fas fa-map-pin"></i> Serving all areas around Mzuzu</div>
+        </div>
+
+        <div class="note"><i class="fas fa-cart-plus"></i> Add items to your cart, then fill in details and order via WhatsApp.</div>
+
+        <!-- restaurant list injected here -->
+        <div id="restaurant-list" class="restaurant-grid"></div>
+
+        <!-- cart card -->
+        <aside class="cart-card">
+            <div class="cart-title"><i class="fas fa-basket-shopping"></i> Your order</div>
+            <div class="cart-items" id="cartItemsContainer">
+                <div style="text-align: center; color: #b9a99b; padding: 1.2rem;">Your cart is empty</div>
+            </div>
+            <div class="cart-summary"><span>Subtotal</span> <span id="subtotal">MK 0</span></div>
+            <div class="cart-actions">
+                <button class="clear-cart-btn" id="clearCartBtn"><i class="fas fa-trash-alt"></i> Clear</button>
+                <button class="order-wa-btn" id="orderViaWABtn"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
+            </div>
+            <div class="cart-fields">
+                <input type="text" id="customerName" placeholder="Your name" value="">
+                <input type="text" id="customerLocation" placeholder="Your location (e.g. Zolozolo)" value="">
+                <input type="tel" id="customerPhone" placeholder="Phone number" value="">
+            </div>
+        </aside>
+
+        <!-- delivery & trust sections -->
+        <div class="delivery-card">
+            <h4><i class="fas fa-motorcycle"></i> Delivery fees</h4>
+            <div class="fee-detail"><span>Town (Chimaliro, Zolozolo, Katawa, Chiputula, Mataifa, Mapale)</span></div>
+            <div class="fee-detail"><span>Medium (Chibavi, Chibanja, Katoto, Moyale, HillTop)</span></div>
+            <div class="fee-detail"><span>Far (Luwinga, Mzuni, Nkholongo, Area 4, Geisha, SOS, Mchengautuwa)</span></div>
+            <div class="areas-note"><i class="fas fa-info-circle"></i> Exact fee depends on location; Thank You</div>
+        </div>
+
+        <div class="trust-bar">
+            <div class="trust-item"><i class="fas fa-bolt"></i> Delivery under 45 min</div>
+            <div class="trust-item"><i class="fas fa-lock"></i> Secure WhatsApp ordering</div>
+        </div>
+
+        <footer class="footer">
+            <div>© 2026 Phindu Food Courier · Mzuzu</div>
+            <div><a href="mailto:info@phindufoodcourier.com"><i class="far fa-envelope"></i> info@phindufoodcourier.com</a></div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="hours"><i class="far fa-clock"></i> open daily 10:00 – 22:00 · Mzuzu, Malawi</div>
+        </footer>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
