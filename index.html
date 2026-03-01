@@ -13,15 +13,20 @@
     <div class="container">
         <!-- header -->
         <div class="hero">
-            <h1><i class="fas fa-motorcycle"></i> Phindu Food Courier <i class="fas fa-utensils"></i></h1>
+            <h1><i class="fas fa-motorcycle"></i> PHINDU FOOD COURIER <i class="fas fa-utensils"></i></h1>
             <div class="sub">Mzuzu's favourite · delivered fast</div>
-            <div class="location"><i class="fas fa-map-pin"></i> Serving all areas around Mzuzu</div>
+            <div class="location"><i class="fas fa-map-pin"></i> Serving all areas around Mzuzu. </div>
         </div>
 
-        <div class="note"><i class="fas fa-cart-plus"></i> Add items to your cart, then fill in details and order via WhatsApp.</div>
+        <div class="note"><i class="fas fa-cart-plus"></i> Tap a restaurant to see its menu, add items to cart, then order via WhatsApp.</div>
 
-        <!-- restaurant list injected here -->
-        <div id="restaurant-list" class="restaurant-grid"></div>
+        <!-- Restaurant tiles (clickable) -->
+        <div id="restaurant-tiles" class="restaurant-tiles"></div>
+
+        <!-- Food menu container (initially empty) -->
+        <div id="food-menu" class="food-menu">
+            <h2 class="menu-title">Select a restaurant to view menu</h2>
+        </div>
 
         <!-- cart card -->
         <aside class="cart-card">
@@ -29,24 +34,30 @@
             <div class="cart-items" id="cartItemsContainer">
                 <div style="text-align: center; color: #b9a99b; padding: 1.2rem;">Your cart is empty</div>
             </div>
-            <div class="cart-summary"><span>Subtotal</span> <span id="subtotal">MK 0</span></div>
+            <div class="cart-summary"><span>Total</span> <span id="total">MK 0</span></div>
+            
+            <!-- Clear button only (above fields) -->
             <div class="cart-actions">
-                <button class="clear-cart-btn" id="clearCartBtn"><i class="fas fa-trash-alt"></i> Clear</button>
-                <button class="order-wa-btn" id="orderViaWABtn"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
+                <button class="clear-cart-btn" id="clearCartBtn"><i class="fas fa-trash-alt"></i> Clear cart</button>
             </div>
+
+            <!-- Customer fields -->
             <div class="cart-fields">
                 <input type="text" id="customerName" placeholder="Your name" value="">
                 <input type="text" id="customerLocation" placeholder="Your location (e.g. Zolozolo)" value="">
                 <input type="tel" id="customerPhone" placeholder="Phone number" value="">
             </div>
+
+            <!-- Order button below phone field (full width, brand color) -->
+            <button class="order-wa-btn" id="orderViaWABtn"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
         </aside>
 
         <!-- delivery & trust sections -->
         <div class="delivery-card">
             <h4><i class="fas fa-motorcycle"></i> Delivery fees</h4>
-            <div class="fee-detail"><span>Town (Chimaliro, Zolozolo, Katawa, Chiputula, Mataifa, Mapale)</span></div>
-            <div class="fee-detail"><span>Medium (Chibavi, Chibanja, Katoto, Moyale, HillTop)</span></div>
-            <div class="fee-detail"><span>Far (Luwinga, Mzuni, Nkholongo, Area 4, Geisha, SOS, Mchengautuwa)</span></div>
+            <div class="fee-detail"><span>Town (Chimaliro, Zolozolo, Katawa, Chiputula, Mataifa, Mapale = K5000)</span></div>
+            <div class="fee-detail"><span>Medium (Chibavi, Chibanja, Katoto, Moyale, HillTop = K6500)</span></div>
+            <div class="fee-detail"><span>Far (Luwinga, Mzuni, Nkholongo, Area 4, Geisha, SOS, Mchengautuwa =K9000)</span></div>
             <div class="areas-note"><i class="fas fa-info-circle"></i> Exact fee depends on location; Thank You</div>
         </div>
 
@@ -63,7 +74,7 @@
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="hours"><i class="far fa-clock"></i> open daily 10:00 – 22:00 · Mzuzu, Malawi</div>
+            <div class="hours"><i class="far fa-clock"></i> open daily 9:00 – 6:00 · Mzuzu, Malawi</div>
         </footer>
     </div>
 

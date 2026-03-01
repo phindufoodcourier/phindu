@@ -1,111 +1,126 @@
-// ---------- YOUR WHATSAPP NUMBER (international format, no spaces or +) ----------
-const WHATSAPP_NUMBER = '265881006198'; // ✅ Your number added
+// ---------- YOUR WHATSAPP NUMBER ----------
+const WHATSAPP_NUMBER = '265881006198'; // ✅ Your number
 
 // ---------- IMAGE MAPPING ----------
 const imageMap = {
     logos: {
-        "KIPS": "images/kips-logo.jpg",
-        "GALITOS": "images/galitos-logo.jpg",
-        "KWITHU COFFEE DEN": "images/kwiithu-logo.jpg",
-        "MEAT ZONE": "images/meat-zone-logo.jpg",
-        "BELLA'S FOOD COURT": "https://via.placeholder.com/300x200?text=Bella's",
-        "CHICKEN LITOS": "https://via.placeholder.com/300x200?text=Chicken+Litos"
+        "KIPS": "images/kips.jpg",
+        "GALITOS": "images/galitos.jpg",
+        "KWITHU COFFEE DEN": "images/kwithu.jpg",
+        "MEAT ZONE": "images/meat-zone.jpg",
+        "BELLA'S FOOD COURT": "images/bellas-food.jpg",
+        "CHICKEN LITOS": "images/chicken-litos.jpg"
     },
     foods: {
         // KIPS
         "Egg Roll": "images/egg-roll.jpg",
         "1 Fried Chicken & Chips": "images/fried-chicken-chips.jpg",
-        "Chips & Sausage": "images/plain-chips.jpg",
-        "Chips & Eggs": "images/eggs-chips.jpg",
-        "Chicken Piece": "images/grilled-chicken-hips.jpg",
-        "Nsima & Chambo": "images/nsima-chambo.jpg",
-        "1 Chicken Stew & Chips": "images/local-rice-chicken.jpg",
-        "Beef Stew & Chips": "images/grilled-steak.jpg",
-        "Sausage": "images/plain-chips.jpg",
-        "Beef Samosas": "https://via.placeholder.com/200x200?text=Beef+Samosas",
-        "Burger": "images/delicious-cheese-burger.jpg",
-        "Delicious Burger": "images/delicious-cheese-burger.jpg",
+        "Chips & Sausage": "images/chips-sausage.jpg",
+        "Chips & Eggs": "images/chips-eggs.jpg",
+        "Chicken Piece": "images/chicken-piece.jpg",
+        "Nsima & Chambo": "images/delicious-nsima-chambo.jpg",
+        "1 Chicken Stew & Chips": "images/chicken-chips.jpg",
+        "Beef Stew & Chips": "images/beef-stew-chicken.jpg",
+        "Sausage": "images/sausages.jpg",
+        "Beef Samosas": "images/meat-samosa.jpg",
+        "Burger": "images/burger.jpg",
+        "Delicious Burger": "images/beef-cheese-burger.jpg",
         "Large Pizza": "images/large-pizza.jpg",
         "Medium Pizza": "images/medium-pizza.jpg",
         "Small Pizza": "images/small-pizza.jpg",
-        "Egg Sandwich": "images/egg-cheese-sandwich.jpg",
+        "Egg Sandwich": "images/egg-sandwich.jpg",
         "Club Sandwich": "images/club-sandwich.jpg",
         // GALITOS
-        "Grilled Chicken": "images/grilled-chicken-hips.jpg",
-        "18 Grilled Chicken": "images/grilled-chicken-hips.jpg",
-        "12 Grilled Chicken": "images/grilled-chicken-hips.jpg",
-        "6 Grilled Chicken": "images/grilled-chicken-hips.jpg",
-        "Chicken + Chips": "images/fried-chicken-chips.jpg",
-        "12 Chicken Pieces + Large Chips": "images/fried-chicken-chips.jpg",
-        "6 Chicken + Large Chips": "images/fried-chicken-chips.jpg",
-        "3 Pieces of Chicken + Chips": "images/fried-chicken-chips.jpg",
-        "Chicken + Rice": "images/local-rice-chicken.jpg",
-        "Chicken + Chips + Coleslaw": "images/fried-chicken-chips.jpg",
+        "Large Pizza": "images/large-pizza.jpg",
+        "Medium Pizza": "images/medium-pizza.jpg",
+        "Small Pizza": "images/small-pizza.jpg",
+        "18 Grilled Chicken": "images/18-grilled-chicken.jpg",
+        "12 Grilled Chicken": "images/12-grilled-chicken.jpg",
+        "6 Grilled Chicken": "images/6-grilled-chicken.jpg",
+        "Grilled Chicken": "images/grilled-chicken.jpg",
+        "Chicken + Chips": "images/chips-chicken.jpg",
+        "12 Chicken Pieces + Large Chips": "images/12-chicken-chips.jpg",
+        "6 Chicken + Large Chips": "images/6-chicken-chips.jpg",
+        "3 Pieces of Chicken + Chips": "images/chicken-chips.jpg",
+        "Chicken + Rice": "images/chicken-rice.jpg",
+        "Chicken + Chips + Coleslaw": "images/chips-chicken-coleslaw.jpg",
         "Plain Chips": "images/plain-chips.jpg",
         "Masala Chips": "images/masala-chips.jpg",
-        "Chicken Burger": "images/delicious-cheese-burger.jpg",
-        "Chicken Burger + Cheese": "images/delicious-cheese-burger.jpg",
-        "Chicken Burger + Chips": "images/delicious-cheese-burger.jpg",
-        "Chicken Burger + Cheese + Chips": "images/delicious-cheese-burger.jpg",
-        "300ml Coke": "https://via.placeholder.com/200x200?text=Coke",
-        "300ml Water": "https://via.placeholder.com/200x200?text=Water",
-        "Chilli Beans": "https://via.placeholder.com/200x200?text=Chilli+Beans",
+        "Chicken Burger": "images/chicken-burge-cheese.jpg",
+        "Chicken Burger + Cheese": "images/chicken-burge-cheese.jpg",
+        "Chicken Burger + Chips": "images/chicken-burger-chips.jpg",
+        "Chicken Burger + Cheese + Chips": "images/chicken-burger-cheese-chips.jpg",
+        "300ml Coke": "images/300ml-coke.jpg",
+        "300ml Water": "images/300ml-water.jpg",
+        "Chilli Beans": "images/chilli-beans.jpg",
         "Coleslaw": "images/coleslaw.jpg",
         "Spicy Rice": "images/spicy-rice.jpg",
         // BELLA'S
-        "Chicken Burger": "images/delicious-cheese-burger.jpg",
-        "Classic Burger": "images/delicious-cheese-burger.jpg",
-        "Chips & Chicken": "images/fried-chicken-chips.jpg",
-        "Chicken Pizza": "images/hawaiian-pizza.jpg",
-        "Surpreme Pizza": "images/hawaiian-pizza.jpg",
+        "Chicken Burger": "images/chicken-burger.jpg",
+        "Classic Burger": "images/classic-cheese-burger.jpg",
+        "Chips & Chicken": "images/chicken-chips.jpg",
+        "Chicken Wrap": "images/chicken-wrap.jpg",
+        "Beef Wrap": "images/beef-wrap.jpg",
+        "Chicken Pizza": "images/chicken-pizza.jpg",
         "Hawaiian Pizza": "images/hawaiian-pizza.jpg",
-        "Veggie Pizza": "images/hawaiian-pizza.jpg",
-        "Meat Lovers": "images/meat-zone-logo.jpg",
-        "T-bone Steak(Chips/Rice)": "images/grilled-steak.jpg",
-        "Local Chicken(Nsima/Rice)": "images/local-rice-chicken.jpg",
-        "Chambo(Rice/Nsima)": "images/nsima-chambo.jpg",
-        "Grilled Chicken(Chips/Rice)": "images/grilled-chicken-hips.jpg",
-        "Beef Stir Fry": "images/grilled-steak.jpg",
-        "Samosas": "https://via.placeholder.com/200x200?text=Samosas",
-        "Sausages": "images/plain-chips.jpg",
-        "Chicken Wings": "images/grilled-chicken-wings.jpg",
+        "Veggie Pizza": "images/vegetarian-pizza.jpg",
+        "Meat Lovers": "images/meat-lovers.jpg",
+        "T-bone Steak(Chips/Rice)": "images/grilled-t-bone-chips.jpg",
+        "Local Chicken(Nsima/Rice)": "images/local-food.jpg",
+        "Chambo(Rice/Nsima)": "images/delicious-nsima-chambo.jpg",
+        "Grilled Chicken(Chips/Rice)": "images/baked-chicken-chips.jpg",
+        "Beef Stir Fry": "images/steak-stir-fry.jpg",
+        "Samosas": "images/samosas.jpg",
+        "Sausages": "images/sausages.jpg",
+        "Chicken Wings": "images/chicken-wings.jpg",
         // KWITU
-        "Kwitu Breakfast": "images/kwiithu-breakfast.jpg",
-        "Beef Burger": "images/delicious-cheese-burger.jpg",
-        "Cheese Beef Burger": "images/delicious-cheese-burger.jpg",
-        "Chicken Sandwich": "images/club-sandwich.jpg",
-        "Steak Sandwich": "images/grilled-steak.jpg",
-        "Chicken Wrap": "https://via.placeholder.com/200x200?text=Chicken+Wrap",
-        "Beef Wrap": "https://via.placeholder.com/200x200?text=Beef+Wrap",
-        "T-bone steak": "images/grilled-t-bone-chips.jpg",
-        "Small Pizza(BBQ Beef)": "images/hawaiian-pizza.jpg",
-        "Small Pizza(Chicken)": "images/hawaiian-pizza.jpg",
-        "Small Pizza(Vegetarian)": "images/hawaiian-pizza.jpg",
-        "Medium Pizza(BBQ Beef)": "images/hawaiian-pizza.jpg",
-        "Medium Pizza(Chicken)": "images/hawaiian-pizza.jpg",
-        "Medium Pizza(Vegetarian)": "images/hawaiian-pizza.jpg",
-        "Large Pizza(BBQ Beef)": "images/hawaiian-pizza.jpg",
-        "Large Pizza(Chicken)": "images/hawaiian-pizza.jpg",
-        "Large Pizza(Vegetarian)": "images/hawaiian-pizza.jpg",
-        "Sticky Wings": "images/sticky-chicken-wings.jpg",
-        "Samosa": "https://via.placeholder.com/200x200?text=Samosa",
+        "Kwitu Breakfast": "images/kwithu-breakfast.jpg",
+        "Beef Burger": "images/beef-burger.jpg",
+        "Cheese Beef Burger": "images/beef-cheese-burger.jpg",
+        "Chicken Sandwich": "images/chicken-sandwich.jpg",
+        "Steak Sandwich": "images/Steak-Sandwich.jpg",
+        "Chicken Wrap": "images/chicken-wrap.jpg",
+        "Beef Wrap": "images/beef-wrap.jpg",
+        "T-bone steak": "images/t-bone-steak.jpg",
+        "Small Pizza(BBQ Beef)": "images/beef-pizza.jpg",
+        "Small Pizza(Chicken)": "images/chicken-pizza.jpg",
+        "Small Pizza(Vegetarian)": "images/vegetarian-pizza.jpg",
+        "Medium Pizza(BBQ Beef)": "images/mushroom-pizza.jpg",
+        "Medium Pizza(Chicken)": "images/small-pizza.jpg",
+        "Medium Pizza(Vegetarian)": "images/large-pizza.jpg",
+        "Large Pizza(BBQ Beef)": "images/beef-pizza.jpg",
+        "Large Pizza(Chicken)": "images/chicken-pizza.jpg",
+        "Large Pizza(Vegetarian)": "images/vegetarian-pizza.jpg",
+        "Sticky Wings": "images/sticky-wings.jpg",
+        "Samosa": "images/samosas.jpg",
         "Doughnuts": "images/doughnuts.jpg",
-        "Chocolate Doughnuts": "images/doughnuts.jpg",
+        "Chocolate Doughnuts": "images/chocolates-doughnuts.jpg",
         "Eag & Toast": "images/egg-toast.jpg",
+        //CHICKEN LITOS
+        "Chicken + Rice": "images/chicken-rice.jpg",
+        "Chicken + Chips + Coleslaw": "images/chips-chicken-coleslaw.jpg",
+        "Plain Chips": "images/plain-chips.jpg",
+        "Masala Chips": "images/masala-chips.jpg",
+        "Chicken Burger": "images/chicken-burge-cheese.jpg",
+        "Chicken Burger + Cheese": "images/chicken-burge-cheese.jpg",
+        "Chicken Burger + Chips": "images/chicken-burger-chips.jpg",
+        "Chicken Burger + Cheese + Chips": "images/chicken-burger-cheese-chips.jpg",
+        "Large Pizza": "images/large-pizza.jpg",
+        "Medium Pizza": "images/medium-pizza.jpg",
         // MEAT ZONE
         "Masala Chips": "images/masala-chips.jpg",
-        "Chips & Eggs": "images/eggs-chips.jpg",
-        "Peri Peri Wings": "images/grilled-chicken-wings.jpg",
-        "Chicken Wings": "images/grilled-chicken-wings.jpg",
-        "Grilled Chicken": "images/grilled-chicken-hips.jpg",
-        "Char-grilled Pork ribs": "images/grilled-ribs.jpg",
-        "T-bone Steak": "images/grilled-t-bone-chips.jpg",
-        "Nshima & Chambo": "images/nsima-chambo.jpg",
-        "Stir-Fried Beef": "images/grilled-steak.jpg",
-        "Chicken Sandwich": "images/club-sandwich.jpg",
-        "Steak Sandwich": "images/grilled-steak.jpg",
-        "Chicken Wrap": "https://via.placeholder.com/200x200?text=Chicken+Wrap",
-        "Beef Wrap": "https://via.placeholder.com/200x200?text=Beef+Wrap",
+        "Chips & Eggs": "images/chips-egg.jpg",
+        "Peri Peri Wings": "images/peri-peri-wings.jpg",
+        "Chicken Wings": "images/chicken-wings.jpg",
+        "Grilled Chicken": "images/grilled-chicken.jpg",
+        "Char-grilled Pork ribs": "images/grilled-pork-ribs.jpg",
+        "T-bone Steak": "images/t-bone-steak.jpg",
+        "Nsima & Chambo": "images/nsima-chambo.jpg",
+        "Stir-Fried Beef": "images/steak-stir-fry.jpg",
+        "Chicken Sandwich": "images/chicken-sandwich.jpg",
+        "Steak Sandwich": "images/Steak-Sandwich.jpg",
+        "Chicken Wrap": "images/chicken-wrap.jpg",
+        "Beef Wrap": "images/beef-wrap.jpg",
         "Eag & Toast": "images/egg-toast.jpg",
         "Club Sandwich": "images/club-sandwich.jpg"
     }
@@ -145,7 +160,10 @@ const restaurants = [
     { 
         name: "GALITOS", 
         food: [
-            { name: "Grilled Chicken", price: 12500 },
+            { name: "Large Pizza", price: 38000 },
+            { name: "Medium Pizza", price: 34000 },
+            { name: "Small Pizza", price: 28000 },
+            { name: "Chicken Piece", price: 5665 },
             { name: "18 Grilled Chicken", price: 72000 },
             { name: "12 Grilled Chicken", price: 56000 },
             { name: "6 Grilled Chicken", price: 31000 },
@@ -174,8 +192,9 @@ const restaurants = [
             { name: "Chicken Burger", price: 13500 },
             { name: "Classic Burger", price: 11500 },
             { name: "Chips & Chicken", price: 15000 },
+            { name: "Chicken Wrap", price: 16300 },
+            { name: "Beef Wrap", price: 19000 },
             { name: "Chicken Pizza", price: 25000 },
-            { name: "Surpreme Pizza", price: 24000 },
             { name: "Hawaiian Pizza", price: 28500 },
             { name: "Veggie Pizza", price: 21500 },
             { name: "Meat Lovers", price: 29000 },
@@ -221,9 +240,16 @@ const restaurants = [
         ]
     },
     { name: "CHICKEN LITOS", food: [
-        { name: "Chicken Litos Special", price: 4800 },
-        { name: "Chicken Wrap", price: 3300 },
-        { name: "Nuggets", price: 2600 }
+        { name: "Chicken + Rice", price: 21000 },
+        { name: "Chicken + Chips + Coleslaw", price: 24500 },
+        { name: "Plain Chips", price: 9000 },
+        { name: "Masala Chips", price: 11000 },
+        { name: "Chicken Burger", price: 20000 },
+        { name: "Chicken Burger + Cheese", price: 21500 },
+        { name: "Chicken Burger + Chips", price: 25000 },
+        { name: "Chicken Burger + Cheese + Chips", price: 27500 },
+        { name: "Large Pizza", price: 38000 },
+        { name: "Medium Pizza", price: 34000 },
     ]},
     { 
         name: "MEAT ZONE", 
@@ -235,7 +261,7 @@ const restaurants = [
             { name: "Grilled Chicken", price: 20000 },
             { name: "Char-grilled Pork ribs", price: 18000 },
             { name: "T-bone Steak", price: 16000 },
-            { name: "Nshima & Chambo", price: 18000 },
+            { name: "Nsima & Chambo", price: 18000 },
             { name: "Stir-Fried Beef", price: 9500 },
             { name: "Chicken Sandwich", price: 14000 },
             { name: "Steak Sandwich", price: 18000 },
@@ -318,49 +344,77 @@ orderBtn.addEventListener('click', function() {
     const total = cart.reduce((sum, item) => sum + item.price, 0);
     message += `\nSubtotal: MK ${total}\nName: ${name}\nLocation: ${location}\nPhone: ${phone}\n\nThank you!`;
 
-    // Encode message and open WhatsApp with your number
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
 });
 
-// ---------- GENERATE RESTAURANT HTML ----------
-const container = document.getElementById('restaurant-list');
-if (container) {
-    let htmlString = '';
+// ---------- RENDER RESTAURANT TILES ----------
+const tilesContainer = document.getElementById('restaurant-tiles');
+const foodMenuContainer = document.getElementById('food-menu');
+
+function renderRestaurantTiles() {
+    let html = '';
     restaurants.forEach(rest => {
         const logoSrc = getLogoSrc(rest.name);
-        htmlString += `
-            <div class="restaurant-card">
-                <div class="restaurant-header">
-                    <img class="restaurant-img" src="${logoSrc}" alt="${rest.name}" loading="lazy"
-                        onerror="this.src='https://via.placeholder.com/300x200?text=${encodeURIComponent(rest.name)}'">
-                    <div class="restaurant-title">
-                        <h2>${rest.name}</h2>
-                        <p><i class="fas fa-store-alt"></i> authentic taste</p>
-                    </div>
-                </div>
-                <div class="food-row">
+        html += `
+            <div class="restaurant-tile" data-restaurant="${rest.name}">
+                <img class="tile-img" src="${logoSrc}" alt="${rest.name}" loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/200x200?text=${encodeURIComponent(rest.name)}'">
+                <h3>${rest.name}</h3>
+            </div>
         `;
-        rest.food.forEach(item => {
-            const foodSrc = getFoodSrc(item.name);
-            const escapedName = item.name.replace(/'/g, "\\'");
-            const escapedRest = rest.name.replace(/'/g, "\\'");
-            htmlString += `
-                <div class="food-card">
-                    <img class="food-img" src="${foodSrc}" alt="${item.name}" loading="lazy"
-                        onerror="this.src='https://via.placeholder.com/200x200?text=${encodeURIComponent(item.name)}'">
-                    <h3>${item.name}</h3>
-                    <div class="food-price">MK ${item.price}</div>
-                    <button class="add-to-cart-btn" onclick="addToCart('${escapedName}', ${item.price}, '${escapedRest}')">
-                        <i class="fas fa-cart-plus"></i> Add
-                    </button>
-                </div>
-            `;
-        });
-        htmlString += `</div></div>`;
     });
-    container.innerHTML = htmlString;
+    tilesContainer.innerHTML = html;
+
+    // Add click listeners to tiles
+    document.querySelectorAll('.restaurant-tile').forEach(tile => {
+        tile.addEventListener('click', function() {
+            const restName = this.dataset.restaurant;
+            // Remove active class from all tiles
+            document.querySelectorAll('.restaurant-tile').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            // Render food for this restaurant
+            renderFoodMenu(restName);
+        });
+    });
+}
+
+function renderFoodMenu(restaurantName) {
+    const restaurant = restaurants.find(r => r.name === restaurantName);
+    if (!restaurant) return;
+
+    let foodHtml = `<div class="menu-title"><i class="fas fa-utensils"></i> ${restaurant.name} Menu</div>`;
+    foodHtml += '<div class="food-grid">';
+
+    restaurant.food.forEach(item => {
+        const foodSrc = getFoodSrc(item.name);
+        const escapedName = item.name.replace(/'/g, "\\'");
+        const escapedRest = restaurant.name.replace(/'/g, "\\'");
+        foodHtml += `
+            <div class="food-card">
+                <img class="food-img" src="${foodSrc}" alt="${item.name}" loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/200x200?text=${encodeURIComponent(item.name)}'">
+                <h3>${item.name}</h3>
+                <div class="food-price">MK ${item.price}</div>
+                <button class="add-to-cart-btn" onclick="addToCart('${escapedName}', ${item.price}, '${escapedRest}')">
+                    <i class="fas fa-cart-plus"></i> Add
+                </button>
+            </div>
+        `;
+    });
+
+    foodHtml += '</div>';
+    foodMenuContainer.innerHTML = foodHtml;
+}
+
+// Initialize: render restaurant tiles, and optionally select first restaurant
+renderRestaurantTiles();
+// Select first restaurant by default
+const firstTile = document.querySelector('.restaurant-tile');
+if (firstTile) {
+    firstTile.classList.add('active');
+    renderFoodMenu(firstTile.dataset.restaurant);
 }
 
 // Initial cart render
